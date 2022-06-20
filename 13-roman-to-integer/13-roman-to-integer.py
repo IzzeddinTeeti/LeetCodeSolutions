@@ -14,7 +14,6 @@ class Solution:
                      'CM':900,
                      'M':1000}
         ans = 0
-        
         current_ind = 0
         while current_ind <= len(s)-1:
             if (len(s)-1 - current_ind) >= 1 and (s[current_ind] + s[current_ind+1]) in roman_map.keys():
