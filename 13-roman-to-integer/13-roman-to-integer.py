@@ -17,13 +17,10 @@ class Solution:
         
         current_ind = 0
         while current_ind <= len(s)-1:
-            if (len(s)-1 - current_ind) >= 1:
-                if (s[current_ind] + s[current_ind+1]) in roman_map.keys():
-                    ans += roman_map[s[current_ind] + s[current_ind+1]]
-                    current_ind +=2
-                else:
-                    ans += roman_map[s[current_ind]]
-                    current_ind +=1
+            if (len(s)-1 - current_ind) >= 1 and (s[current_ind] + s[current_ind+1]) in roman_map.keys():
+                ans += roman_map[s[current_ind] + s[current_ind+1]]
+                current_ind +=2
+                
             else:
                 ans += roman_map[s[current_ind]]
                 current_ind +=1
