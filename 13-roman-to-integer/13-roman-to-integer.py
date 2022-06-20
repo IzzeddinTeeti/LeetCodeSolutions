@@ -14,15 +14,12 @@ class Solution:
                      'CM':900,
                      'M':1000}
         ans = 0
-        current_ind = 0
-        while current_ind <= len(s)-1:
-            if (len(s)-1 - current_ind) >= 1 and (s[current_ind] + s[current_ind+1]) in roman_map.keys():
-                ans += roman_map[s[current_ind] + s[current_ind+1]]
-                current_ind +=2
-                
+        
+        for i in range(len(s)):
+            if i + 1 < len(s) and roman_map[s[i]] < roman_map[s[i+1]]:
+                ans -=roman_map[s[i]]
             else:
-                ans += roman_map[s[current_ind]]
-                current_ind +=1
+                ans +=roman_map[s[i]]
                 
         return ans
             
