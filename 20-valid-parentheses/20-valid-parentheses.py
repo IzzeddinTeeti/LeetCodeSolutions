@@ -3,9 +3,6 @@ class Solution:
         match = {'(': ')', 
                  '[': ']', 
                  '{': '}'}
-           
-        if len(s) < 2:
-            return False
         
         stack = []
         
