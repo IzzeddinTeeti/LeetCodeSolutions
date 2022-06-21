@@ -17,4 +17,5 @@ class Solution:
                 col[c].add(board[r][c])
                 row[r].add(board[r][c])
                 sub_board[(r//3,c//3)].add(board[r][c])  
+                
         return True
