@@ -11,7 +11,7 @@ class Solution:
                 
                 if (board[r][c] in row[r] or 
                     board[r][c] in col[c] or 
-                    board[r][c] in sub_board[(r//3, c//3)] ):
+                    board[r][c] in sub_board[(r//3, c//3)]):
                     return False
             
                 col[c].add(board[r][c])
