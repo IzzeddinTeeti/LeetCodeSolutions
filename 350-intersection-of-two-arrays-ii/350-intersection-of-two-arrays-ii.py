@@ -6,10 +6,9 @@ class Solution:
         counts, looped = (collections.Counter(nums2), nums1) if (len1 < len2) else (collections.Counter(nums1), nums2)
             
         for num in looped:
-            if num in counts.keys():
-                if counts[num] > 0:
-                    ans.append(num)
-                    counts[num] -= 1
+            if num in counts.keys() and counts[num] > 0:
+                ans.append(num)
+                counts[num] -= 1
         return ans
         
         
