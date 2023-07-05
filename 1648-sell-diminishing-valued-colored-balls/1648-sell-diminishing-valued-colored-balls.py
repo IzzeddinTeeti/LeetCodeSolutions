@@ -2,7 +2,7 @@ class Solution:
     def maxProfit(self, inventory: List[int], orders: int) -> int:
 
         inventory.sort(reverse=True) # inventory high to low 
-        inventory.append(0)
+        inventory += [0]
         ans = 0
         k = 1
         for i in range(len(inventory)-1): 
