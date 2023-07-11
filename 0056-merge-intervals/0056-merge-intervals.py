@@ -1,19 +1,13 @@
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         
-        intervals = sorted(intervals)
-        left = intervals[0][0]
-        right = intervals[0][1]
-        ans = []
-        
-        intervals = intervals[1:]
-        
+        intervals.sort(key=lambda x: x[0])  # Sort intervals based on the start time
+        merged = []
+
         for interval in intervals:
-            if interval[0] <= right:
-                right = interval[1] if interval[1] > right else right
+            if not merged or merged[-1][1] < interval[0]:
+                merged.append(interval)
             else:
-                ans.append([left, right])
-                left, right = interval[0], interval[1]
-        
-        ans.append([left, right])
-        return ans
+                merged[-1][1] = max(merged[-1][1], interval[1])
+
+        return merged
