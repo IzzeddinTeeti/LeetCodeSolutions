@@ -8,7 +8,8 @@ class Solution:
         
         for row in range(n):
             for col in range(n):
-                side += 4 * grid[row][col]
+                if grid[row][col]:
+                    side += 4 * grid[row][col] + 2
                 if row+1 < n:
                     side -= 2 * min(grid[row][col], grid[row+1][col])
                 if col+1 < n:
@@ -17,4 +18,4 @@ class Solution:
                 
         
         res = side + top_bot        
-        return res
+        return side
