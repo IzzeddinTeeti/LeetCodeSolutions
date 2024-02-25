@@ -2,8 +2,8 @@ class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
         
         # s = set(s)
-        s = list(s)
-        t = list(t)
+#         s = list(s)
+#         t = list(t)
         
         tot_s = sum([ord(char) for char in s])
         tot_t = sum([ord(char) for char in t])
