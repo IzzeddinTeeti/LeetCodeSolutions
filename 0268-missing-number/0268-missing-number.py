@@ -3,8 +3,10 @@ class Solution:
         
         n = len(nums)
         
-        total_sum = n*(n+1) // 2
+        nums = set(nums)
         
-        current_sum = sum(nums)
+        for i in range(n+1):
+            if i not in nums:
+                return i
+            
         
-        return total_sum - current_sum
