@@ -1,14 +1,27 @@
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
-        
-        
-        visited = {}
-        
-        for num in nums:
-            if num in visited.keys():
-                return num
+        low = 1
+        high = len(nums) - 1
+
+        while low < high:
+            mid = (low + high) // 2
+            count = sum(1 for x in nums if x <= mid)
+
+            if count > mid:
+                high = mid
             else:
-                visited[num] = 1
+                low = mid + 1
+
+        return low
+        
+        
+#         visited = {}
+        
+#         for num in nums:
+#             if num in visited.keys():
+#                 return num
+#             else:
+#                 visited[num] = 1
         
         
 #         n = len(nums) # 5
