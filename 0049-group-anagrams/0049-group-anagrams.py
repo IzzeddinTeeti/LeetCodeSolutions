@@ -7,7 +7,7 @@ class Solution:
         
         for word in strs:
             
-            ordered = ''.join(sorted(word))
+            ordered = str(sorted(word))
             
             if ordered in visited.keys():
                 visited[ordered].append(word)
