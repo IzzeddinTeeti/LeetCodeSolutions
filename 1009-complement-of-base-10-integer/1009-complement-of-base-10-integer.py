@@ -1,23 +1,31 @@
 class Solution:
     def bitwiseComplement(self, n: int) -> int:
-        
         if n==0:
             return 1
-        binary = []
+        mask = 1
+        while mask <= n:
+            mask = mask << 1
+        mask -= 1
+        return n ^ mask
         
-        ans = n
-        reminder = 0
+#         if n==0:
+#             return 1
+#         binary = []
         
-        while ans:
-            binary.append(ans % 2)
-            ans = ans // 2
+#         ans = n
+#         reminder = 0
         
-        binary = list(reversed(binary))
-        inv_binary = [0 if i==1 else 1 for i in binary]
+#         while ans:
+#             binary.append(ans % 2)
+#             ans = ans // 2
         
-        ans = 0
-        for ind, i in enumerate(reversed(inv_binary)):
-            ans += i * 2**ind
-        # print(binary)   
-        return ans
+#         binary = list(reversed(binary))
+#         inv_binary = [0 if i==1 else 1 for i in binary]
+        
+#         ans = 0
+#         for ind, i in enumerate(reversed(inv_binary)):
+#             ans += i * 2**ind
+#         # print(binary)   
+#         return ans
+            
         
