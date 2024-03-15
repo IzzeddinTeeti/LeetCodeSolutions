@@ -1,7 +1,7 @@
 class Solution:
     def prisonAfterNDays(self, cells: List[int], n: int) -> List[int]:
         
-        n = max((n-1)%14 + 1, 1)
+        n = (n-1)%14 + 1
         total = len(cells)
         
         for day in range(n):
