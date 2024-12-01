@@ -13,6 +13,7 @@ Python3 solutions to some LeetCode problems
 | [0003-longest-substring-without-repeating-characters](https://github.com/IzzeddinTeeti/LeetCodeSolutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0006-zigzag-conversion](https://github.com/IzzeddinTeeti/LeetCodeSolutions/tree/master/0006-zigzag-conversion) |
 | [0008-string-to-integer-atoi](https://github.com/IzzeddinTeeti/LeetCodeSolutions/tree/master/0008-string-to-integer-atoi) |
+| [0014-longest-common-prefix](https://github.com/IzzeddinTeeti/LeetCodeSolutions/tree/master/0014-longest-common-prefix) |
 ## Sliding Window
 |  |
 | ------- |
@@ -43,4 +44,8 @@ Python3 solutions to some LeetCode problems
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/IzzeddinTeeti/LeetCodeSolutions/tree/master/0011-container-with-most-water) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/IzzeddinTeeti/LeetCodeSolutions/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
