@@ -4,10 +4,8 @@ class Solution:
         left = 0
         right = len(heights) -1
         max_area = 0
-        repeated = False
-        # print(max_area)
 
-        while right > left and not repeated:
+        while right > left:
             area = min(heights[right],heights[left]) * (right - left)
 
             max_area = area if area > max_area else max_area
