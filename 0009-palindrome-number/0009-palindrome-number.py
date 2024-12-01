@@ -9,6 +9,23 @@ class Solution:
         # second = second[::-1]
 
         # return first == second
-        s = str(x)
-        return s == s[::-1]
+        if x < 0:
+            return False
+
+        if x >=0 and x < 10:
+            return True
+
+        origional = x
+        reversed_x = 0
+
+        while x:
+            number = x % 10
+            reversed_x = reversed_x * 10 + number
+            x = x // 10
+            # print(x, reversed_x)
+
+        return origional == reversed_x
+
+        # s = str(x)
+        # return s == s[::-1]
         
