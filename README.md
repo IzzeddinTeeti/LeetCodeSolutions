@@ -21,6 +21,7 @@ Python3 solutions to some LeetCode problems
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/IzzeddinTeeti/LeetCodeSolutions/tree/master/0004-median-of-two-sorted-arrays) |
+| [0011-container-with-most-water](https://github.com/IzzeddinTeeti/LeetCodeSolutions/tree/master/0011-container-with-most-water) |
 ## Binary Search
 |  |
 | ------- |
@@ -34,4 +35,12 @@ Python3 solutions to some LeetCode problems
 | ------- |
 | [0007-reverse-integer](https://github.com/IzzeddinTeeti/LeetCodeSolutions/tree/master/0007-reverse-integer) |
 | [0009-palindrome-number](https://github.com/IzzeddinTeeti/LeetCodeSolutions/tree/master/0009-palindrome-number) |
+## Two Pointers
+|  |
+| ------- |
+| [0011-container-with-most-water](https://github.com/IzzeddinTeeti/LeetCodeSolutions/tree/master/0011-container-with-most-water) |
+## Greedy
+|  |
+| ------- |
+| [0011-container-with-most-water](https://github.com/IzzeddinTeeti/LeetCodeSolutions/tree/master/0011-container-with-most-water) |
 <!---LeetCode Topics End-->
